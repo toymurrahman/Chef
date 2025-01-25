@@ -13,12 +13,18 @@ const Cards = () => {
     )
 
     return (
-        <div className="w-2/3 mx-auto">
-            <h1 className="text-4xl"> cards : {cards.length} </h1>
-            {
-            cards.map( card => <Card key={card.id} card={card} />)
-            }
-        </div>
+       <div>
+         <div className="w-2/3 mx-auto grid grid-cols-2 mt-16">
+           
+           {
+           cards.map( card => <Card key={card.id} card={card} />)
+           }
+       </div>
+       {/* Bookmark section */}
+       <div>
+
+       </div>
+       </div>
     );
 };
 
