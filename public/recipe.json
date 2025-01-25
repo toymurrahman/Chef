@@ -1,0 +1,144 @@
+[
+      {
+        "title": "Spaghetti Bolognese",
+        "description": "Classic Italian pasta dish with savory meat sauce.",
+        "image": "https://www.recipetineats.com/wp-content/uploads/2019/09/Spaghetti-Bolognese_9-SQ.jpg",
+        "ingredients": [
+          "500g ground beef",
+          "1 onion, chopped",
+          "2 cloves garlic, minced"
+        ],
+        "details": {
+          "time": "30 minutes",
+          "calories": "600 calories"
+        }
+      },
+      {
+        "title": "Chicken Alfredo",
+        "description": "Creamy pasta with grilled chicken and Parmesan cheese.",
+        "image": "https://www.simplyrecipes.com/thmb/8tHr66nAxFJneBu1RIYFEMeoPbM=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Chicken-Alfredo-LEAD-08-dcf2b5c599d9401ea97720c8ef47bc8e.jpg",
+        "ingredients": [
+          "300g fettuccine pasta",
+          "2 chicken breasts, grilled",
+          "1 cup heavy cream"
+        ],
+        "details": {
+          "time": "25 minutes",
+          "calories": "700 calories"
+        }
+      },
+      {
+        "title": "Vegetable Stir-Fry",
+        "description": "Healthy and colorful vegetables stir-fried in soy sauce.",
+        "image": "https://www.loveandlemons.com/wp-content/uploads/2020/03/IMG_0625-scaled.jpg",
+        "ingredients": [
+          "2 cups mixed vegetables",
+          "2 tbsp soy sauce",
+          "1 tbsp sesame oil"
+        ],
+        "details": {
+          "time": "15 minutes",
+          "calories": "200 calories"
+        }
+      },
+      {
+        "title": "Margherita Pizza",
+        "description": "Classic Italian pizza with tomato sauce, mozzarella, and basil.",
+        "image": "https://cookieandkate.com/images/2018/07/best-margherita-pizza-recipe-2.jpg",
+        "ingredients": [
+          "1 pizza dough",
+          "1/2 cup tomato sauce",
+          "100g mozzarella cheese"
+        ],
+        "details": {
+          "time": "20 minutes",
+          "calories": "500 calories"
+        }
+      },
+      {
+        "title": "Grilled Salmon",
+        "description": "Perfectly grilled salmon with a hint of lemon and herbs.",
+        "image": "https://www.jessicagavin.com/wp-content/uploads/2020/01/grilled-salmon-13-1200.jpg",
+        "ingredients": [
+          "2 salmon fillets",
+          "1 lemon, sliced",
+          "1 tbsp olive oil"
+        ],
+        "details": {
+          "time": "20 minutes",
+          "calories": "350 calories"
+        }
+      },
+      {
+        "title": "Beef Tacos",
+        "description": "Crispy tacos filled with seasoned ground beef and fresh toppings.",
+        "image": "https://www.dinneratthezoo.com/wp-content/uploads/2018/07/ground-beef-tacos-4.jpg",
+        "ingredients": [
+          "500g ground beef",
+          "8 taco shells",
+          "1 cup shredded lettuce"
+        ],
+        "details": {
+          "time": "20 minutes",
+          "calories": "400 calories"
+        }
+      },
+      {
+        "title": "Caesar Salad",
+        "description": "Crisp romaine lettuce with Caesar dressing and croutons.",
+        "image": "https://www.simplyrecipes.com/thmb/KjcguZfG3oI8IJHd8gA6dJfLSUs=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Caesar-Salad-LEAD-02-64c4744cf2774a98bf54b197e62d50c2.jpg",
+        "ingredients": [
+          "1 head romaine lettuce",
+          "1/4 cup Caesar dressing",
+          "1/2 cup croutons"
+        ],
+        "details": {
+          "time": "10 minutes",
+          "calories": "150 calories"
+        }
+      },
+      {
+        "title": "Shrimp Scampi",
+        "description": "Garlic butter shrimp served over angel hair pasta.",
+        "image": "https://www.eatwell101.com/wp-content/uploads/2022/08/Garlic-Shrimp-Scampi-Recipe.jpg",
+        "ingredients": [
+          "300g shrimp",
+          "200g angel hair pasta",
+          "2 cloves garlic, minced"
+        ],
+        "details": {
+          "time": "20 minutes",
+          "calories": "450 calories"
+        }
+      },
+      {
+        "title": "Tomato Soup",
+        "description": "Smooth and creamy tomato soup topped with fresh basil.",
+        "image": "https://cookieandkate.com/images/2018/02/creamy-tomato-soup-recipe-1.jpg",
+        "ingredients": [
+          "4 large tomatoes",
+          "1 cup vegetable broth",
+          "1/2 cup heavy cream"
+        ],
+        "details": {
+          "time": "30 minutes",
+          "calories": "250 calories"
+        }
+      },
+      {
+        "title": "Pancakes",
+        "description": "Fluffy pancakes served with maple syrup and fresh berries.",
+        "image": "https://www.inspiredtaste.net/wp-content/uploads/2021/07/Fluffy-Pancakes-Recipe-1-1200.jpg",
+        "ingredients": [
+          "1 cup flour",
+          "1 cup milk",
+          "1 egg"
+        ],
+        "details": {
+          "time": "15 minutes",
+          "calories": "300 calories"
+        }
+      }
+    ]
+  
+  
