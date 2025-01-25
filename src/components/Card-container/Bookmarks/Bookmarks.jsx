@@ -1,11 +1,12 @@
+import Bookmark from "../Bookmark/Bookmark";
 
-
-const Bookmarks = () => {
-    return (
-        <div className="w-1/3 mx-auto">
-            
-        </div>
-    );
+const Bookmarks = ({wantToCook}) => {
+  return (
+    <div className="">
+        <h2>b: {wantToCook.length} </h2>
+        <Bookmark />
+    </div>
+  );
 };
 
 export default Bookmarks;

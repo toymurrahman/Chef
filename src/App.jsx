@@ -1,4 +1,6 @@
+import { useState } from "react"
 import Banner from "./components/Banner/Banner"
+
 import Cards from "./components/Card-container/Cards/Cards"
 import Declaration from "./components/Declaration/Declaration"
 import Navbar from "./components/Navbar/Navbar"
@@ -6,7 +8,12 @@ import Navbar from "./components/Navbar/Navbar"
 
 
 function App() {
- 
+ const [ wantToCook,setWantToCook ] = useState([]);
+
+ const handleAddtoCook = card =>{
+ const newWantToCook = [...wantToCook, card];
+ setWantToCook(newWantToCook);
+ }
 
   return (
     <>
@@ -15,7 +22,8 @@ function App() {
       <Navbar />
       <Banner />
       <Declaration />
-      <Cards />
+      <Cards handleAddtoCook={handleAddtoCook} wantToCook={wantToCook} />
+      {/* <Bookmarks /> */}
       
       
     </>

@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Card from "../Card/Card";
+import Bookmarks from "../Bookmarks/Bookmarks";
 
-const Cards = () => {
+const Cards = ({ handleAddtoCook,wantToCook }) => {
     const [cards, setCards] = useState([]);
     useEffect(
         () => {
@@ -13,16 +14,18 @@ const Cards = () => {
     )
 
     return (
-       <div>
-         <div className="w-2/3 mx-auto grid grid-cols-2 mt-16">
+       <div className="grid grid-cols-2 mt-16 mb-6  ">
+         <div className="w-[50vw]  mx-auto grid grid-cols-2">
            
            {
-           cards.map( card => <Card key={card.id} card={card} />)
+           cards.map( card => <Card key={card.id}
+            handleAddtoCook={handleAddtoCook} card={card} />)
            }
+           
        </div>
        {/* Bookmark section */}
-       <div>
-
+       <div className="w-[25vw] mr-4 mx-auto">
+       <Bookmarks wantToCook={wantToCook} />
        </div>
        </div>
     );

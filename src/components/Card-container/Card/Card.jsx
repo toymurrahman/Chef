@@ -1,11 +1,11 @@
 import { IoMdTime } from "react-icons/io";
 import { FaFire } from "react-icons/fa";
 
-const Card = ( { card } ) => {
-    const { id, title, description, image, ingredients, details } = card;
+const Card = ( { card,handleAddtoCook } ) => {
+    const {  title, description, image, ingredients, details } = card;
   return (
-    <div>
-      <div className="card bg-base-100 w-96 border ">
+    <div className="mt-6 ">
+      <div className="card bg-base-100 w-96 border shadow-lg ">
         <figure className="px-10 pt-10 w-full">
           <img
             src={image}
@@ -37,7 +37,7 @@ const Card = ( { card } ) => {
           </div>
           
           <div className="card-actions">
-          <button className="btn btn-active btn-accent bg-green-400 text-black font-bold hover:bg-green-800 transition rounded-full">
+          <button onClick={() => handleAddtoCook(card)} className="btn btn-active btn-accent bg-green-400 text-black font-bold hover:bg-green-800 transition rounded-full">
             Want to Cook </button>
           </div>
         </div>
