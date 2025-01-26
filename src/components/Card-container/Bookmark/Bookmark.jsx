@@ -1,4 +1,7 @@
-const Bookmark = () => {
+
+
+const Bookmark = ({ wantToCooks }) => {
+  const { id, title, details } =wantToCooks;
   return (
     <div className=" border rounded-2xl mt-6 pb-36 shadow-lg">
         {/* want to cook section */}
@@ -6,6 +9,7 @@ const Bookmark = () => {
         <div className="mt-6 font-bold border-b-2 py-4  ">
             <h1 className="text-center text-2xl">Want to cook:</h1>
         </div>
+
         <div className="text-gray-500">
           <table className="table">
             {/* head */}
@@ -19,14 +23,19 @@ const Bookmark = () => {
                </tr>
               
             </thead>
+
             <tbody>
               {/* row  */}
              
+             {/* <Cooklist wantToCooks={wantToCooks} >
+
+             </Cooklist> */}
+
               <tr>
-               <th>1</th>
-                <td>Cy Ganderton</td>
-                <td>Quality Control</td>
-                <td>Blue</td>
+               <th>{id}</th>
+                <td>{title}</td>
+                <td>{details.time}</td>
+                <td> {details.calories} </td>
                </tr>
              
              
