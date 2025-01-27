@@ -1,15 +1,17 @@
 import { useState } from "react";
 import Cooklist from "../Cooklist/Cooklist";
 
-const Bookmarks = ({ wantToCook, cooking }) => {
+const Bookmarks = ({ wantToCook, setWantToCook, cooking, }) => {
   const [cookingItem, setCookingItem] = useState([]);
 
   const handleCookingItem = (item) => {
-    const newCookItem = [...cookingItem, item];
-    setCookingItem(newCookItem);
+    const updatedCookingItem = [...cookingItem, item];
+    setCookingItem(updatedCookingItem);
+
+    const updatedWantToCook = wantToCook.filter((bookmark) => bookmark.id !== item.id);
+    setWantToCook(updatedWantToCook);
   };
 
-  console.log(cooking); // Check if cooking data is being passed correctly
 
   if (!Array.isArray(wantToCook)) return null;
 
@@ -39,7 +41,7 @@ const Bookmarks = ({ wantToCook, cooking }) => {
                     <td>{bookmark.details.calories}</td>
                     <td>
                       <button
-                        onClick={() => handleCookingItem(bookmark)} // Pass the specific bookmark
+                        onClick={() => handleCookingItem(bookmark)} 
                         className="btn btn-active btn-accent bg-green-400 text-black font-bold hover:bg-green-700 transition rounded-full"
                       >
                         Preparing
@@ -59,3 +61,5 @@ const Bookmarks = ({ wantToCook, cooking }) => {
 };
 
 export default Bookmarks;
+
+

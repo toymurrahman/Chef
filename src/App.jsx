@@ -10,6 +10,7 @@ import Bookmarks from "./components/Card-container/Bookmarks/Bookmarks";
 
 function App() {
   const [wantToCook, setWantToCook] = useState([]);
+  
  
 
   const handleAddtoCook = (card) => {
@@ -48,7 +49,7 @@ function App() {
       <Declaration />
 
       {/* Cards section */}
-      <Cards handleAddtoCook={handleAddtoCook} wantToCook={wantToCook} />
+      <Cards handleAddtoCook={handleAddtoCook} wantToCook={wantToCook} setWantToCook={setWantToCook} />
 
       
       <div className="my-6">

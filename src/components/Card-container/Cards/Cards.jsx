@@ -3,7 +3,7 @@ import { useState } from "react";
 import Card from "../Card/Card";
 import Bookmarks from "../Bookmarks/Bookmarks";
 
-const Cards = ({ handleAddtoCook, wantToCook }) => {
+const Cards = ({ handleAddtoCook, wantToCook,setWantToCook }) => {
   const [cards, setCards] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -35,7 +35,7 @@ const Cards = ({ handleAddtoCook, wantToCook }) => {
       
       {/* Bookmarks Section */}
       <div className=" rounded-lg p-4">
-        <Bookmarks wantToCook={wantToCook} />
+        <Bookmarks wantToCook={wantToCook} setWantToCook={setWantToCook}/>
       </div>
     </div>
   );
