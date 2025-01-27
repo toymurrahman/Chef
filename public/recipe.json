@@ -16,8 +16,8 @@
       "200g spaghetti"
     ],
     "details": {
-      "time": "30 minutes",
-      "calories": "600 calories"
+      "time": 30,
+      "calories": 600 
     }
   },
   {
@@ -35,8 +35,8 @@
       "Salt and pepper to taste"
     ],
     "details": {
-      "time": "25 minutes",
-      "calories": "700 calories"
+      "time": 25,
+      "calories": 700
     }
   },
   {
@@ -55,8 +55,8 @@
       "1 tsp grated ginger"
     ],
     "details": {
-      "time": "15 minutes",
-      "calories": "200 calories"
+      "time": 15,
+      "calories": 200
     }
   },
   {
@@ -72,8 +72,8 @@
       "1 tbsp olive oil"
     ],
     "details": {
-      "time": "20 minutes",
-      "calories": "500 calories"
+      "time": 20,
+      "calories": 500
     }
   },
   {
@@ -89,8 +89,8 @@
       "Salt and pepper to taste"
     ],
     "details": {
-      "time": "20 minutes",
-      "calories": "350 calories"
+      "time": 20,
+      "calories": 350
     }
   },
   {
@@ -109,8 +109,8 @@
       "1/2 tsp cumin"
     ],
     "details": {
-      "time": "20 minutes",
-      "calories": "400 calories"
+      "time": 20,
+      "calories": 400
     }
   },
   {
@@ -126,8 +126,8 @@
       "1/4 tsp black pepper"
     ],
     "details": {
-      "time": "10 minutes",
-      "calories": "150 calories"
+      "time": 10,
+      "calories": 150
     }
   },
   {
@@ -145,8 +145,8 @@
       "Chopped parsley for garnish"
     ],
     "details": {
-      "time": "20 minutes",
-      "calories": "450 calories"
+      "time": 20,
+      "calories": 450
     }
   },
   {
@@ -164,8 +164,8 @@
       "Salt and pepper to taste"
     ],
     "details": {
-      "time": "30 minutes",
-      "calories": "250 calories"
+      "time": 30,
+      "calories": 250
     }
   },
   {
@@ -183,8 +183,8 @@
       "Butter for cooking"
     ],
     "details": {
-      "time": "15 minutes",
-      "calories": "300 calories"
+      "time": 15,
+      "calories": 300
     }
   }
 ]

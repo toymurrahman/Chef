@@ -13,13 +13,13 @@ const Bookmarks = ({ wantToCook, setWantToCook, cooking, }) => {
   };
 
 
-  if (!Array.isArray(wantToCook)) return null;
+ 
 
   return (
     <div className="p-4 border rounded-md shadow-md">
       <div className="mb-16">
         <div>
-          <h2 className="text-lg font-bold mb-4 text-center">Want to Cook: </h2>
+          <h2 className="text-lg font-bold mb-4 text-center">Want to Cook: {wantToCook.length} </h2>
           <div className="text-gray-500">
             <table className="table">
               <thead>
@@ -37,8 +37,8 @@ const Bookmarks = ({ wantToCook, setWantToCook, cooking, }) => {
                   <tr key={bookmark.id}>
                     <td>{bookmark.id}</td>
                     <td>{bookmark.title}</td>
-                    <td>{bookmark.details.time}</td>
-                    <td>{bookmark.details.calories}</td>
+                    <td>{bookmark.details.time} minutes</td>
+                    <td>{bookmark.details.calories} calories</td>
                     <td>
                       <button
                         onClick={() => handleCookingItem(bookmark)} 

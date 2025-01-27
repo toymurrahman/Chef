@@ -27,10 +27,10 @@ const Card = ({ card, handleAddtoCook }) => {
           </div>
           <div className="card-details py-4 flex text-gray-500">
             <h1 className="flex items-center">
-              <IoMdTime className="mr-2" /> {details.time}
+              <IoMdTime className="mr-2" /> {details.time} minutes
             </h1>
             <h1 className="ml-8 flex items-center">
-              <FaFire className="mr-2" /> {details.calories}
+              <FaFire className="mr-2" /> {details.calories} calories
             </h1>
           </div>
 

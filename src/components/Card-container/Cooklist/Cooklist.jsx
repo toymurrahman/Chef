@@ -1,4 +1,8 @@
-const Cooklist = ({  cookingItem }) => {
+const Cooklist = ({cookingItem }) => {
+
+    const totalTime = cookingItem.reduce((acc, item) => acc + item.details.time, 0);
+    const totalCalories = cookingItem.reduce((acc, item) => acc + item.details.calories, 0);
+  
     if (!Array.isArray(cookingItem) || cookingItem.length === 0) {
       return (
         <div>
@@ -20,7 +24,7 @@ const Cooklist = ({  cookingItem }) => {
   
     return (
       <div>
-        <h2 className="text-lg font-bold mb-4 text-center">Currently cooking:</h2>
+        <h2 className="text-lg font-bold mb-4 text-center">Currently cooking: {cookingItem.length}</h2>
         <div className="text-gray-500">
           <table className="table">
             <thead>
@@ -29,6 +33,7 @@ const Cooklist = ({  cookingItem }) => {
                 <th>Name</th>
                 <th>Time</th>
                 <th>Calories</th>
+                
               </tr>
             </thead>
             <tbody>
@@ -36,12 +41,30 @@ const Cooklist = ({  cookingItem }) => {
                 <tr key={item.id}>
                   <td>{item.id}</td>
                   <td>{item.title}</td>
-                  <td>{item.details.time}</td>
-                  <td>{item.details.calories}</td>
+                  <td>{item.details.time} minutes</td>
+                  <td>{item.details.calories} calories</td>
                 </tr>
+                
               ))}
             </tbody>
           </table>
+
+        </div>
+        <div className="mt-4 text-center text-gray-400  flex justify-end gap-5">
+          <p><strong>Total Time:</strong> {totalTime} minutes</p>
+          <p><strong>Total Calories:</strong> {totalCalories} kcal</p>
+        </div>
+
+
+        <div>
+        {/* {cookingItem.map((item) => (
+                <div key={item.id} className="text-gray-400  flex justify-end gap-5 ">
+                    <h2>Total time: <br /> {item.details.time} </h2>
+                    <h2>Total calories: <br />{item.details.calories} </h2>
+                </div>
+                
+              ))} */}
+
         </div>
       </div>
     );
