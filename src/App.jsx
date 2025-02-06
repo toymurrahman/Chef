@@ -1,17 +1,15 @@
-
 import { useState } from "react";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Banner from "./components/Banner/Banner";
 import Cards from "./components/Card-container/Cards/Cards";
 import Declaration from "./components/Declaration/Declaration";
 import Navbar from "./components/Navbar/Navbar";
-import Bookmarks from "./components/Card-container/Bookmarks/Bookmarks";
+
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [wantToCook, setWantToCook] = useState([]);
-  
- 
 
   const handleAddtoCook = (card) => {
     if (!wantToCook.find((item) => item.id === card.id)) {
@@ -49,20 +47,13 @@ function App() {
       <Declaration />
 
       {/* Cards section */}
-      <Cards handleAddtoCook={handleAddtoCook} wantToCook={wantToCook} setWantToCook={setWantToCook} />
+      <Cards
+        handleAddtoCook={handleAddtoCook}
+        wantToCook={wantToCook}
+        setWantToCook={setWantToCook}
+      />
 
-      
-      <div className="my-6">
-        
-        <Bookmarks
-          wantToCook={wantToCook}
-          setWantToCook={setWantToCook}
-          
-        />
-      </div>
-
-     
-    
+      <Footer />
     </>
   );
 }

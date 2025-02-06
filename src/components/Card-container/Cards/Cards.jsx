@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import { useState } from "react";
 import Card from "../Card/Card";
@@ -8,7 +9,7 @@ const Cards = ({ handleAddtoCook, wantToCook,setWantToCook }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/public/recipe.json")
+    fetch("../../../../public/recipe.json")
       .then((response) => response.json())
       .then((data) => {
         setCards(data);
@@ -42,3 +43,4 @@ const Cards = ({ handleAddtoCook, wantToCook,setWantToCook }) => {
 };
 
 export default Cards;
+

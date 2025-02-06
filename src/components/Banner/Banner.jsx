@@ -1,10 +1,10 @@
-
+import bannar from '../../assets/image/banner.jpg'
 
 const Banner = () => {
     return (
         <div className="relative w-full mt-16 rounded-3xl overflow-hidden">
       <img
-        src="/src/assets/image/banner.jpg" 
+        src={bannar} 
         alt="Banner"
         className="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover "
       />
